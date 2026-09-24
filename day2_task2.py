@@ -22,5 +22,5 @@ def get_grade(score):
   else:
     return "A"
 
-for score in test_scores:
-  print(get_grade((score)))
+# for score in test_scores:
+#   print(get_grade((score)))

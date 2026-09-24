@@ -27,4 +27,4 @@ def get_highest_lowest(scores):
 
   return high,low
 
-print(get_highest_lowest(testing))
+# print(get_highest_lowest(testing))
