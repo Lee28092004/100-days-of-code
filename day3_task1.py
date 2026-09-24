@@ -13,16 +13,18 @@
 
 test_scores = [95, 82, 71, 60, 45, 100, 79, 88]
 
-def get_highest_lowest(scores):
-  high, low = test_scores[0], test_scores[0]
+testing = [12,3,42,4,5,1]
 
-  for scores in test_scores:
-    if scores > high:
-        high = scores
+def get_highest_lowest(scores):
+  high, low = scores[0], scores[0]
+
+  for n in scores:
+    if n > high:
+        high = n
     
-    if scores < low:
-        low = scores
+    if n < low:
+        low = n
 
   return high,low
 
-print(get_highest_lowest(test_scores))
+print(get_highest_lowest(testing))
