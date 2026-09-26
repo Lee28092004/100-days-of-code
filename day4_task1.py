@@ -37,3 +37,4 @@ def calculate(num1, operator, num2):
 # print(calculate(10, "/", 5))
 # print(calculate(10, "/", 0))
 # print(calculate(0, "/", 5))
+# print(calculate(10, "%", 5))

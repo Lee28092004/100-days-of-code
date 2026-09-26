@@ -21,10 +21,11 @@ def get_calculator_input():
     num1 = int(input("Enter a number for num1: "))
     num2 = int(input("Enter a number for num2: "))
     operator = input("Enter an operator you wanted to calculate num1 & num2 (+, -, *, /): ")  
-    return calculate(num1, operator, num2)
+    result = calculate(num1, operator, num2)
+    return isinstance(result, (int, float))
 
   except:
     return("That's not a valid number.")
 
 
-# print(get_calculator_input())
+print(get_calculator_input())
