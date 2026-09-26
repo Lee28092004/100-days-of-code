@@ -11,5 +11,5 @@ while answer == "yes":
   print(get_calculator_input())
   answer= input("Calculate again? (yes/no): ")
 
-  if answer != "yes" and answer != "no":
+  while answer != "yes" and answer != "no":
     answer = input("Invalid answer. Please try Again (yes/no): ")
