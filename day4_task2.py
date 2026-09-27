@@ -22,7 +22,12 @@ def get_calculator_input():
     num2 = int(input("Enter a number for num2: "))
     operator = input("Enter an operator you wanted to calculate num1 & num2 (+, -, *, /): ")  
     result = calculate(num1, operator, num2)
-    return isinstance(result, (int, float))
+    if isinstance(result, (int, float)):
+      with open("history.txt", "a") as file:
+        file.write(f"{num1} {operator} {num2} = {result} \n")
+      return result
+    else:
+      return ("That's not a valid operator.")
 
   except:
     return("That's not a valid number.")
