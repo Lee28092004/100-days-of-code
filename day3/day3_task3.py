@@ -19,7 +19,7 @@
 
 # Loop through it, and for each student, print their name, their score, and their letter grade, reusing your existing get_grade function.
 
-from day2_task2 import get_grade
+from day2.day2_task2 import get_grade
 
 students = {"Alice": 92, "Ben": 55, "Chen": 78, "Dara": 40}
 

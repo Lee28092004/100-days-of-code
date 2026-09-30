@@ -15,7 +15,7 @@
 
 student_scores = {"Alice": 92, "Ben": "eighty", "Chen": 78, "Dara": 40, "Eli": 105}
 
-from day3_task4 import safe_grade
+from day3.day3_task4 import safe_grade
 
 def process_students(students):
   for name, score in students.items():

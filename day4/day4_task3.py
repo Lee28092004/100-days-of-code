@@ -2,7 +2,7 @@
 
 # Task: wrap your get_calculator_input() call in a loop so the calculator keeps asking for new calculations repeatedly. After each calculation, ask the person if they want to do another one, something like "Calculate again? (yes/no)". If they type anything other than "yes", the loop should stop and the program ends.
 
-from day4_task2 import get_calculator_input
+from day4.day4_task2 import get_calculator_input
 
 answer = "yes"
 

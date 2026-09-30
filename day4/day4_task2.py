@@ -13,7 +13,7 @@
 # Wraps the number conversions in try/except, so if someone types something that can't convert to a number, it doesn't crash, instead print something like "That's not a valid number" and don't proceed to calculate
 # If the numbers are valid, call your existing calculate(num1, operator, num2) function and print the result
 
-from day4_task1 import calculate
+from day4.day4_task1 import calculate
 
 
 def get_calculator_input():

@@ -16,7 +16,7 @@
 # Tries to call get_grade(score) and return its result
 # If score isn't actually a number (someone passes in text by mistake), catch that error instead of crashing, and return "Invalid score" instead
 
-from day2_task2 import get_grade
+from day2.day2_task2 import get_grade
 
 def safe_grade(score):
   try:
