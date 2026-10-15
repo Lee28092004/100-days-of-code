@@ -1,15 +1,3 @@
-# Step 4 only: stop hard-coding the tasks and let the user add one.
-
-# Ask the user for a description with input() and store it in a variable.
-# Use that variable to create a new Task object.
-# append it to tasks.
-# Print len(tasks) to confirm the list grew.
-
-# Put this before your loop, and remove the three hard-coded task1, task2 and task3 lines and their append lines, so the list starts empty.
-
-# Fix error list if user type wrong
-
-
 class Task:
   def __init__(self, description):
     self.description = description
@@ -55,7 +43,7 @@ while second_answer == "yes":
     task_description()
     second_answer= input("Change another (yes / no): ")
     while second_answer != "yes" and second_answer != "no":
-          second_answer = input("Invalid Input. Please Try again. Change another (yes / no): ")
+        second_answer = input("Invalid Input. Please Try again. Change another (yes / no): ")
 
 task_description()
 print(len(tasks))
