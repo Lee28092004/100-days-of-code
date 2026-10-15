@@ -7,6 +7,8 @@
 
 # Put this before your loop, and remove the three hard-coded task1, task2 and task3 lines and their append lines, so the list starts empty.
 
+# Fix error list if user type wrong
+
 
 class Task:
   def __init__(self, description):
@@ -21,10 +23,14 @@ tasks = []
 answer = "yes"
 
 while answer == "yes":
-  n = Task(input("Enter a task: "))
-  tasks.append(n)
-  answer = input("Add another (yes / no): ")
+  descriptions = (input("Enter a task: "))
+  if len(descriptions) > 0:
+    n = Task(descriptions)
+    tasks.append(n)
+    answer = input("Add another (yes / no): ")
 
+  else:
+    print("Wrong answer. Please Try Again")
 
 for task in tasks:
   print(task.description, task.status)
